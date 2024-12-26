@@ -65,6 +65,7 @@ def upddate_model (cursor,connection):
     connection.commit()
     print("Данные успешно обновлены!")
 
+
 def get_full_model_info(cursor):
     query = """SELECT m.id, m.name, m.year, b.name, b.country FROM models m 
                 JOIN brands b ON m.brand_id = b.id    """
